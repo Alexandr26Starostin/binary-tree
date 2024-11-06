@@ -1,0 +1,6 @@
+#ifndef CONST_IN_BINARY_TREE
+#define CONST_IN_BINARY_TREE
+
+
+
+#endif
