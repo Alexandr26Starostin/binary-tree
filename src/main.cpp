@@ -7,6 +7,10 @@
 #define ATTACH_NODE_(value)                                                     \
 	status = attach_node (value, ptr_first_node, __LINE__, __FILE__);           \
 	if (status) {return status;}                                                \
+	                                                                            \
+	status = dump_inorder_tree (ptr_first_node);                                \
+	if (status) {return status;}                                                \
+	                                                                            \
 	print_inorder_tree (ptr_first_node);                                        \
 	printf ("\n");
 
@@ -19,6 +23,9 @@ int main ()
 	tree_error_t status = creat_new_node (&ptr_first_node, 50, __LINE__, __FILE__);
 	if (status) {return status;}
 
+	status = dump_inorder_tree (ptr_first_node);                                
+	if (status) {return status;}
+	
 	print_inorder_tree (ptr_first_node);
 	printf ("\n");
 

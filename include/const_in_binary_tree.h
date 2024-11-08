@@ -12,7 +12,8 @@ struct node_t
 enum tree_error_t
 {
 	NOT_ERROR           = 0,
-	NOT_MEMORY_FOR_NODE = 1
+	NOT_MEMORY_FOR_NODE = 1,
+	NOT_FIND_TREE_DOT   = 2
 };
 
 #endif

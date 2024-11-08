@@ -1,0 +1,14 @@
+digraph
+{
+	rankdir = TB
+	node[fontsize=9]
+	edge[color="green",fontsize=12]
+
+	50 -> 12
+	12 -> 5
+	12 -> 15
+	15 -> 17
+	50 -> 70
+	70 -> 60
+	
+}
